@@ -1,0 +1,7 @@
+export { HeroSection } from './HeroSection'
+export { BannerSlider } from './BannerSlider'
+export { MemberAccessSection } from './MemberAccessSection'
+export { FeaturesSection } from './FeaturesSection'
+export { PortfolioSection } from './PortfolioSection'
+export { CoursesSection } from './CoursesSection'
+export { CtaSection } from './CtaSection'

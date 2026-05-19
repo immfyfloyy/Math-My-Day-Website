@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1400 500" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="g3" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#06b6d4"/>
+      <stop offset="100%" stop-color="#0e7490"/>
+    </linearGradient>
+  </defs>
+  <rect width="1400" height="500" fill="url(#g3)"/>
+  <circle cx="1180" cy="100" r="170" fill="#ffffff" opacity="0.08"/>
+  <circle cx="80" cy="420" r="140" fill="#ffffff" opacity="0.08"/>
+
+  <text x="100" y="130" font-family="sans-serif" font-size="22" font-weight="700" fill="#fbbf24" letter-spacing="6">SLIDE 03 - LIVE NOW</text>
+  <text x="100" y="230" font-family="sans-serif" font-size="80" font-weight="800" fill="#ffffff">LIVE CLASS PACK</text>
+  <text x="100" y="290" font-family="sans-serif" font-size="32" font-weight="500" fill="#ffffff" opacity="0.9">เรียนสด ม.4 - ม.6 กับครูผู้เชี่ยวชาญ</text>
+
+  <rect x="100" y="350" width="450" height="78" rx="39" fill="#ffffff"/>
+  <text x="135" y="402" font-family="sans-serif" font-size="40" font-weight="800" fill="#0e7490">฿2,490</text>
+  <text x="305" y="402" font-family="sans-serif" font-size="22" font-weight="500" fill="#94a3b8">/ เดือน</text>
+  <text x="415" y="398" font-family="sans-serif" font-size="22" fill="#94a3b8" text-decoration="line-through">฿3,490</text>
+
+  <g transform="translate(880, 130)">
+    <rect x="0" y="0" width="400" height="240" rx="24" fill="#0f172a" opacity="0.55"/>
+    <rect x="0" y="0" width="400" height="240" rx="24" fill="none" stroke="#ffffff" stroke-width="6"/>
+    <text x="32" y="80" font-family="sans-serif" font-size="48" font-weight="800" fill="#ffffff">x² + 2x</text>
+    <text x="32" y="150" font-family="sans-serif" font-size="48" font-weight="800" fill="#fbbf24">= y</text>
+    <text x="32" y="210" font-family="sans-serif" font-size="22" fill="#ffffff" opacity="0.75">วันนี้: เรขาคณิต ม.5</text>
+    <circle cx="360" cy="36" r="10" fill="#ef4444">
+      <animate attributeName="opacity" values="1;0.4;1" dur="1.5s" repeatCount="indefinite"/>
+    </circle>
+    <text x="312" y="42" font-family="sans-serif" font-size="16" font-weight="800" fill="#ffffff">LIVE</text>
+  </g>
+</svg>

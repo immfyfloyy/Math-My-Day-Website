@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1400 500" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="g4" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f093fb"/>
+      <stop offset="100%" stop-color="#f5576c"/>
+    </linearGradient>
+  </defs>
+  <rect width="1400" height="500" fill="url(#g4)"/>
+  <circle cx="1280" cy="120" r="160" fill="#ffffff" opacity="0.10"/>
+  <circle cx="100" cy="420" r="120" fill="#ffffff" opacity="0.08"/>
+
+  <text x="100" y="130" font-family="sans-serif" font-size="22" font-weight="700" fill="#fef3c7" letter-spacing="6">SLIDE 04 - LIFETIME ACCESS</text>
+  <text x="100" y="230" font-family="sans-serif" font-size="80" font-weight="800" fill="#ffffff">LIBRARY PRO</text>
+  <text x="100" y="290" font-family="sans-serif" font-size="32" font-weight="500" fill="#ffffff" opacity="0.9">1,200+ บทเรียน ทุกระดับชั้น ดูได้ตลอดชีพ</text>
+
+  <rect x="100" y="350" width="430" height="78" rx="39" fill="#ffffff"/>
+  <text x="135" y="402" font-family="sans-serif" font-size="40" font-weight="800" fill="#db2777">฿4,990</text>
+  <text x="320" y="398" font-family="sans-serif" font-size="24" fill="#94a3b8" text-decoration="line-through">฿9,990</text>
+  <rect x="445" y="370" width="68" height="38" rx="19" fill="#ef4444"/>
+  <text x="479" y="397" text-anchor="middle" font-family="sans-serif" font-size="20" font-weight="800" fill="#ffffff">-50%</text>
+
+  <g transform="translate(940, 110)">
+    <rect x="0" y="220" width="260" height="40" rx="6" fill="#f59e0b"/>
+    <rect x="-10" y="170" width="280" height="50" rx="6" fill="#06b6d4"/>
+    <rect x="-20" y="115" width="300" height="50" rx="6" fill="#a855f7"/>
+    <rect x="-10" y="60" width="280" height="50" rx="6" fill="#ec4899"/>
+    <rect x="10" y="0" width="240" height="55" rx="6" fill="#10b981"/>
+    <text x="20" y="38" font-family="sans-serif" font-size="22" font-weight="700" fill="#ffffff">CALCULUS</text>
+    <text x="0" y="93" font-family="sans-serif" font-size="22" font-weight="700" fill="#ffffff">GEOMETRY</text>
+    <text x="-10" y="148" font-family="sans-serif" font-size="22" font-weight="700" fill="#ffffff">ALGEBRA</text>
+    <text x="0" y="203" font-family="sans-serif" font-size="22" font-weight="700" fill="#ffffff">STATISTICS</text>
+    <text x="10" y="248" font-family="sans-serif" font-size="22" font-weight="700" fill="#ffffff">TRIGONOMETRY</text>
+  </g>
+</svg>
