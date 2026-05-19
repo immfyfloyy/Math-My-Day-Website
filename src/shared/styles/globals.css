@@ -1,0 +1,28 @@
+/* ============================================
+   Math My Day — Global Stylesheet Entry
+   --------------------------------------------
+   Tailwind CSS v4 + Legacy custom styles
+   ============================================ */
+
+@import "tailwindcss";
+
+/* Legacy design system (preserved for visual fidelity) */
+@import "./legacy.css";
+
+/* Marketing banner slider */
+@import "./banner-slider.css";
+
+/* Base reset (in addition to Tailwind preflight) */
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#app {
+  min-height: 100%;
+}
+
+body {
+  margin: 0;
+}
