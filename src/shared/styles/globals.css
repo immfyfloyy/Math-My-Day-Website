@@ -12,6 +12,9 @@
 /* Marketing banner slider */
 @import "./banner-slider.css";
 
+/* Tutors profile section */
+@import "./tutors.css";
+
 /* Base reset (in addition to Tailwind preflight) */
 * {
   box-sizing: border-box;

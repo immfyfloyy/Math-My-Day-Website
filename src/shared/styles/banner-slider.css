@@ -8,9 +8,7 @@
     margin-top: 150px;
     padding: 24px 0 80px;
     overflow: hidden;
-    background:
-        radial-gradient(ellipse at 50% 0%, rgba(148, 163, 184, 0.12) 0%, transparent 65%),
-        linear-gradient(180deg, rgba(248, 250, 252, 0.65) 0%, rgba(226, 232, 240, 0.35) 100%);
+    background: #ffffff;
 }
 
 /* === Abstract background blobs === */
@@ -48,12 +46,7 @@
 }
 
 .banner-blob.blob-3 {
-    bottom: -25%;
-    left: 28%;
-    width: 600px;
-    height: 600px;
-    background: radial-gradient(circle, #67e8f9 0%, transparent 70%);
-    animation-delay: -12s;
+    display: none;
 }
 
 @keyframes blobFloat {
@@ -63,12 +56,7 @@
 }
 
 .banner-curve {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 220px;
-    display: block;
+    display: none;
 }
 
 /* === Floating math symbols === */

@@ -17,7 +17,7 @@ export const featureCards: FeatureCard[] = [
     ],
   },
   {
-    icon: 'fa-gamepad2',
+    icon: 'fa-gamepad',
     title: 'เกมส์คณิตศาสตร์',
     description: 'เรียนรู้ผ่านเกมส์สนุกๆ พร้อมแข่งขันกับเพื่อน',
     hoverItems: [
