@@ -9,10 +9,17 @@
 // Additionally, you should also exclude this file from your linter and/or formatter to prevent it from being checked or modified.
 
 import { Route as rootRouteImport } from './routes/__root'
+import { Route as TcasCalculatorRouteImport } from './routes/tcas-calculator'
 import { Route as SignupRouteImport } from './routes/signup'
 import { Route as IndexRouteImport } from './routes/index'
+import { Route as ApiTcasCalculateRouteImport } from './routes/api/tcas/calculate'
 import { Route as ApiAuthSignupRouteImport } from './routes/api/auth/signup'
 
+const TcasCalculatorRoute = TcasCalculatorRouteImport.update({
+  id: '/tcas-calculator',
+  path: '/tcas-calculator',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const SignupRoute = SignupRouteImport.update({
   id: '/signup',
   path: '/signup',
@@ -21,6 +28,11 @@ const SignupRoute = SignupRouteImport.update({
 const IndexRoute = IndexRouteImport.update({
   id: '/',
   path: '/',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ApiTcasCalculateRoute = ApiTcasCalculateRouteImport.update({
+  id: '/api/tcas/calculate',
+  path: '/api/tcas/calculate',
   getParentRoute: () => rootRouteImport,
 } as any)
 const ApiAuthSignupRoute = ApiAuthSignupRouteImport.update({
@@ -32,35 +44,66 @@ const ApiAuthSignupRoute = ApiAuthSignupRouteImport.update({
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
   '/signup': typeof SignupRoute
+  '/tcas-calculator': typeof TcasCalculatorRoute
   '/api/auth/signup': typeof ApiAuthSignupRoute
+  '/api/tcas/calculate': typeof ApiTcasCalculateRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
   '/signup': typeof SignupRoute
+  '/tcas-calculator': typeof TcasCalculatorRoute
   '/api/auth/signup': typeof ApiAuthSignupRoute
+  '/api/tcas/calculate': typeof ApiTcasCalculateRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
   '/signup': typeof SignupRoute
+  '/tcas-calculator': typeof TcasCalculatorRoute
   '/api/auth/signup': typeof ApiAuthSignupRoute
+  '/api/tcas/calculate': typeof ApiTcasCalculateRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
-  fullPaths: '/' | '/signup' | '/api/auth/signup'
+  fullPaths:
+    | '/'
+    | '/signup'
+    | '/tcas-calculator'
+    | '/api/auth/signup'
+    | '/api/tcas/calculate'
   fileRoutesByTo: FileRoutesByTo
-  to: '/' | '/signup' | '/api/auth/signup'
-  id: '__root__' | '/' | '/signup' | '/api/auth/signup'
+  to:
+    | '/'
+    | '/signup'
+    | '/tcas-calculator'
+    | '/api/auth/signup'
+    | '/api/tcas/calculate'
+  id:
+    | '__root__'
+    | '/'
+    | '/signup'
+    | '/tcas-calculator'
+    | '/api/auth/signup'
+    | '/api/tcas/calculate'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
   SignupRoute: typeof SignupRoute
+  TcasCalculatorRoute: typeof TcasCalculatorRoute
   ApiAuthSignupRoute: typeof ApiAuthSignupRoute
+  ApiTcasCalculateRoute: typeof ApiTcasCalculateRoute
 }
 
 declare module '@tanstack/react-router' {
   interface FileRoutesByPath {
+    '/tcas-calculator': {
+      id: '/tcas-calculator'
+      path: '/tcas-calculator'
+      fullPath: '/tcas-calculator'
+      preLoaderRoute: typeof TcasCalculatorRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/signup': {
       id: '/signup'
       path: '/signup'
@@ -73,6 +116,13 @@ declare module '@tanstack/react-router' {
       path: '/'
       fullPath: '/'
       preLoaderRoute: typeof IndexRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/api/tcas/calculate': {
+      id: '/api/tcas/calculate'
+      path: '/api/tcas/calculate'
+      fullPath: '/api/tcas/calculate'
+      preLoaderRoute: typeof ApiTcasCalculateRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/api/auth/signup': {
@@ -88,7 +138,9 @@ declare module '@tanstack/react-router' {
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
   SignupRoute: SignupRoute,
+  TcasCalculatorRoute: TcasCalculatorRoute,
   ApiAuthSignupRoute: ApiAuthSignupRoute,
+  ApiTcasCalculateRoute: ApiTcasCalculateRoute,
 }
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)
